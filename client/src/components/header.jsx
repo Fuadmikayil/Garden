@@ -10,7 +10,7 @@ const Header = () => {
         <h1>Gardena</h1>
       </div>
       <div className="header-action">
-        <input type="text" placeholder="Search..." />
+        <input type="text" className="input-search" placeholder="Search..." />
         <a href="#">Menu</a>
         <img src={menuIcon} alt="Menu Icon" />
       </div>

@@ -18,6 +18,8 @@
       display: flex;
       gap: 20px;
       align-items: center;
+      
+      
     }
   
     .header-logo {
@@ -37,7 +39,7 @@
       z-index: 9;
   
       input {
-        max-width: 90px;
+        min-width: 130px;
         padding: 10px 16px;
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 34px;
@@ -85,11 +87,11 @@
   
     // Mobil cihazlar (480px və aşağı)
     @media (max-width: 480px) {
-      flex-direction: column;
+     width:100%;
       align-items: center;
       text-align: center;
       gap: 10px;
-  
+      
       .header-logo {
         h1 {
           font-size: 18px;
@@ -110,6 +112,7 @@
         img {
           width: 20px;
           max-height: 20px;
+          height: 100px!important;
         }
       }
     }
