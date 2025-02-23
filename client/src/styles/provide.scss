@@ -1,0 +1,132 @@
+.Provide {
+    padding: 0 30px;
+    display: flex;
+    padding-top: 130px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+  
+    > .Provide_img {
+      min-width: 35%;
+      height: 500px;
+      border-radius: 20px;
+  
+      > img {
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+        object-position: center;
+        border-radius: 20px;
+      }
+    }
+  
+    > .Provide-about {
+      display: flex;
+      width: 50%;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px 0;
+      color: white;
+  
+      > .d3 {
+        width: 212px;
+      }
+  
+      > p {
+        font-size: 15px;
+        width: 80%;
+        font-weight: 200;
+        padding-bottom: 20px;
+      }
+  
+      > .provide-button {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+  
+        > button {
+          background-color: white;
+          border-radius: 7px;
+          font-size: 21px;
+          padding: 8px 21px;
+        }
+  
+        > i {
+          font-size: 34px;
+          transform: rotate(-60deg);
+        }
+      }
+    }
+  
+    // Responsive Ayarlamalar
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+  
+      > .Provide_img,
+      > .Provide-about {
+        width: 100%;
+      }
+  
+      > .Provide_img {
+        height: auto;
+      }
+  
+      > .Provide-about {
+        > p {
+          width: 90%;
+          text-align: center;
+        }
+  
+        > .d3 {
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 0 20px;
+      padding-top: 60px;
+  
+      > .Provide_img {
+        height: 300px;
+      }
+  
+      > .Provide-about {
+        > p {
+          font-size: 14px;
+        }
+        > .provide-button {
+          flex-direction: column;
+          gap: 15px;
+        }
+      }
+    }
+  
+    @media (max-width: 450px) {
+      padding: 0 10px;
+      padding-top: 40px;
+      
+      > .Provide-about {
+        > p {
+          width: 100%;
+          font-size: 13px;
+        }
+        
+        > .provide-button {
+          > button {
+            font-size: 18px;
+            padding: 6px 15px;
+          }
+          
+          > i {
+            font-size: 28px;
+          }
+        }
+      }
+    }
+  }
+  
