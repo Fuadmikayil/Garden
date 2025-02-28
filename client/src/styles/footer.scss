@@ -1,0 +1,178 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.141);
+    padding: 40px 50px;
+  
+    > .logo-about {
+      display: flex;
+      padding: 30px;
+      padding-bottom: 50px;
+      justify-content: space-between;
+  
+      > .logo_head {
+        > img {
+          width: 160px;
+        }
+        > p {
+          color: white;
+          font-size: 13px;
+          width: 300px;
+          font-weight: 200;
+        }
+      }
+  
+      > .social_head {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+        color: rgba(241, 241, 241, 0.83);
+  
+        > h3 {
+          font-size: 27px;
+          font-weight: 400;
+        }
+  
+        > .icons {
+          display: flex;
+          gap: 20px;
+  
+          > i {
+            font-size: 27px;
+          }
+        }
+      }
+    }
+  
+    > img {
+      width: 400px;
+      height: 3px;
+      margin: 0 auto;
+    }
+  
+    > h1 {
+      color: rgba(241, 241, 241, 0.83);
+      margin: 0 auto;
+      font-size: 20px;
+      font-weight: 500;
+    }
+  
+    // Responsive Ayarlamalar
+    @media (max-width: 1024px) {
+      padding: 30px 40px;
+  
+      > .logo-about {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        padding-bottom: 30px;
+        gap: 20px;
+        
+        > .logo_head {
+          text-align: center;
+          > img {
+            width: 140px;
+          }
+          > p {
+            width: 100%;
+            font-size: 12px;
+          }
+        }
+  
+        > .social_head {
+          align-items: center;
+          > h3 {
+            font-size: 24px;
+          }
+          > .icons {
+            gap: 15px;
+            > i {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+  
+      > img {
+        width: 300px;
+      }
+  
+      > h1 {
+        font-size: 18px;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      padding: 20px 30px;
+  
+      > .logo-about {
+        > .logo_head {
+          > img {
+            width: 120px;
+          }
+          > p {
+            font-size: 11px;
+            width: 90%;
+          }
+        }
+  
+        > .social_head {
+          > h3 {
+            font-size: 20px;
+          }
+          > .icons {
+            gap: 10px;
+            > i {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+  
+      > img {
+        width: 250px;
+      }
+  
+      > h1 {
+        font-size: 16px;
+      }
+    }
+  
+    @media (max-width: 450px) {
+      padding: 15px 20px;
+  
+      > .logo-about {
+        > .logo_head {
+          > img {
+            width: 100px;
+          }
+          > p {
+            font-size: 10px;
+            width: 100%;
+          }
+        }
+  
+        > .social_head {
+          > h3 {
+            font-size: 18px;
+          }
+          > .icons {
+            gap: 8px;
+            > i {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+  
+      > img {
+        width: 200px;
+      }
+  
+      > h1 {
+        font-size: 14px;
+      }
+    }
+  }
+  
