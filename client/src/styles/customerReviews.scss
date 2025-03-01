@@ -1,0 +1,123 @@
+.Customer-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 30px;
+  margin: 0 20px;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.042);
+  border: 1px solid;
+  border-image: linear-gradient(
+      150deg,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.19),
+      rgba(255, 255, 255, 1)
+    )
+    1;
+
+  .Customer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 60px;
+    gap: 30px;
+
+    img {
+      object-fit: cover;
+      height: 300px;
+      width: 400px;
+      object-position: left;
+      border-radius: 50px;
+    }
+
+    .Customer-about {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      width: 55%;
+      padding-top: 10px;
+
+      .Customer-about-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+        h1 {
+          color: white;
+          display: flex;
+          align-items: center;
+          gap: 5px;
+        }
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 1.6;
+      }
+
+      a {
+        color: white;
+        text-decoration: none;
+        text-align: right;
+        font-weight: bold;
+        transition: 0.3s;
+
+        &:hover {
+          color: #ffcc00;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .Customer-wrapper {
+    width: 80%;
+    padding: 30px;
+
+    .Customer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+      gap: 0px;
+
+      img {
+        width: 90%;
+        height: 600px;
+      }
+
+      .Customer-about {
+        width: 100%;
+
+        .Customer-about-head {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        a {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .Customer-wrapper {
+    width: 80%;
+    padding: 30px;
+
+    .Customer {
+
+
+      img {
+        height: 400px;
+        object-position: center;
+      }
+    }
+  }
+}
