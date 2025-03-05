@@ -181,7 +181,10 @@ header {
     .green_circle3 {
       width: 319px;
       height: 319px;
-      background: linear-gradient(rgba(205, 255, 87, 0.1), rgba(123, 153, 52, 1));
+      background: linear-gradient(
+        rgba(205, 255, 87, 0.1),
+        rgba(123, 153, 52, 1)
+      );
       border-radius: 50%;
       filter: blur(100.2px);
       position: absolute;
@@ -263,24 +266,71 @@ header {
 // RESPONSIVE DESIGN
 @media (max-width: 1024px) {
   .hero {
-    flex-direction: column;
     align-items: center;
+    flex-direction: column-reverse;
     text-align: center;
+    padding-top: 200px;
+    gap: 0px;
 
     .hero-info {
-      max-width: 100%;
+      max-width: 80%;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      align-items: center;
       h2 {
-        font-size: 60px;
+        font-size: 53px;
       }
       p {
         font-size: 16px;
+      }
+      button {
+        margin-top: 5px;
       }
     }
 
     .hero-social {
       .colmn_div {
-        padding-right: 0;
         text-align: center;
+        img {
+          height: 420px;
+        }
+      }
+    }
+  }
+  .container {
+    width: 90% !important;
+  }
+  .Customer-wrapper {
+    h1 {
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+    .Customer {
+      img {
+        height: 400px !important;
+      }
+      .Customer-about {
+        gap: 15px!important;
+        .Customer-about-head {
+          gap: 0px !important;
+          h1 {
+            font-size: 30px;
+          }
+          div {
+            h3 {
+              font-size: 25px;
+            }
+            h5 {
+              font-size: 20px;
+            }
+          }
+        }
+        p{
+          font-size: 19px!important;
+        }
+        a{
+          font-size: 20px!important;
+        }
       }
     }
   }
@@ -289,6 +339,7 @@ header {
 @media (max-width: 768px) {
   .hero {
     padding: 20px;
+    padding-top: 200px;
 
     .hero-info {
       h2 {
