@@ -98,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 500px;
+    width: 35%;
     .green_circle3 {
       width: 319px;
       height: 319px;
@@ -220,6 +220,7 @@ body {
     }
 
     .hero-social {
+      width: 55%;
       .colmn_div {
         text-align: center;
         img {
@@ -239,7 +240,7 @@ body {
     padding: 20px;
     padding-top: 200px;
     .hero-social{
-    width: 450px;
+    width: 90%;
 
     }
     .hero-info {
@@ -250,13 +251,14 @@ body {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
   .container {
     width: 100% !important;
   }
   .hero {
     padding: 15px;
     .hero-social {
+      width: 100%;
       margin-top: 110px;
     }
     .hero-info {
@@ -267,9 +269,9 @@ body {
         font-size: 15px;
       }
       .btns {
-        flex-direction: column;
+        flex-direction: column!important;
         button{
-          font-size: 15px;
+          font-size: 18px;
           padding: 5px 12px;
         }
       }
@@ -287,9 +289,11 @@ body {
     }
    }
    .img_div{
+    right: 0px!important;
+
     img{
       height: 350px!important;
-      right: -80px!important;
+      right: -75px!important;
     }
    }
   }

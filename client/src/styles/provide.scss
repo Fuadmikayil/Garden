@@ -75,9 +75,11 @@
       }
   
       > .Provide-about {
+        
+        text-align: center;
+        width: 100%;
         > p {
-          width: 90%;
-          text-align: center;
+          width: 100%;
         }
   
         > .d3 {
@@ -102,6 +104,9 @@
         > .provide-button {
           flex-direction: column;
           gap: 15px;
+          button{
+            font-size: 19px;
+          }
         }
       }
     }

@@ -41,9 +41,12 @@
       input {
         min-width: 130px;
         padding: 10px 16px;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(255, 255, 255, 0.178);
         border-radius: 34px;
         color: white;
+        box-shadow: -1px 7px 67px 1px rgba(255,255,255,0.25);
+-webkit-box-shadow: -1px 7px 67px 1px rgba(255,255,255,0.25);
+-moz-box-shadow: -1px 7px 67px 1px rgba(255,255,255,0.25);
       }
   
       a {
