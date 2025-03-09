@@ -98,7 +98,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 35%;
+    width: 450px;
     .green_circle3 {
       width: 319px;
       height: 319px;
@@ -113,8 +113,8 @@ body {
       right: -40%;
       z-index: -99;
     }
-    .iconlar{
-      margin-top: 20px!important;
+    .iconlar {
+      margin-top: 20px !important;
     }
     .colmn_div {
       display: flex;
@@ -125,6 +125,9 @@ body {
       position: relative;
       border: 2px solid white;
       border-radius: 20px;
+      .div_text {
+        margin-right: 10px;
+      }
 
       h1 {
         background-color: #133e18;
@@ -156,7 +159,7 @@ body {
           padding: 0 5px;
         }
       }
-      .img_div{
+      .img_div {
         width: 420px;
         overflow: hidden;
         background-color: transparent;
@@ -167,10 +170,9 @@ body {
         img {
           position: absolute;
           right: -90px;
-          bottom: 0px;
+          bottom: -10px;
         }
       }
-      
     }
 
     .iconlar {
@@ -220,7 +222,7 @@ body {
     }
 
     .hero-social {
-      width: 55%;
+    width: 450px;
       .colmn_div {
         text-align: center;
         img {
@@ -232,17 +234,13 @@ body {
   .container {
     width: 90% !important;
   }
-  
 }
 
 @media (max-width: 768px) {
   .hero {
     padding: 20px;
     padding-top: 200px;
-    .hero-social{
-    width: 90%;
-
-    }
+   
     .hero-info {
       h2 {
         font-size: 40px;
@@ -257,20 +255,17 @@ body {
   }
   .hero {
     padding: 15px;
-    .hero-social {
-      width: 100%;
-      margin-top: 110px;
-    }
+  
     .hero-info {
       h2 {
         font-size: 25px;
       }
-      p{
+      p {
         font-size: 15px;
       }
       .btns {
-        flex-direction: column!important;
-        button{
+        flex-direction: column !important;
+        button {
           font-size: 18px;
           padding: 5px 12px;
         }
@@ -278,23 +273,23 @@ body {
     }
   }
   .hero-social {
-    max-width: 300px!important;
-   h2{
-    font-size: 18px;
-   }
-   .colmn_div{
-
-    h1{
-      font-size: 15px!important;
+    width: 330px!important;
+    margin-top: 110px;
+    h2 {
+      font-size: 18px;
     }
-   }
-   .img_div{
-    right: 0px!important;
-
-    img{
-      height: 350px!important;
-      right: -75px!important;
+    .colmn_div {
+      h1 {
+        font-size: 15px !important;
+      }
     }
-   }
+    .img_div {
+      right: 0px !important;
+
+      img {
+        height: 350px !important;
+        right: -70px !important;
+      }
+    }
   }
 }

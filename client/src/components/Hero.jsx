@@ -19,7 +19,7 @@ const Hero = () => {
 
       <div className="hero-social">
         <div className="colmn_div">
-          <div>
+          <div className="div_text">
             <h1>Available</h1>
             <h2>Garden Maintainer</h2>
             <div className="star">
