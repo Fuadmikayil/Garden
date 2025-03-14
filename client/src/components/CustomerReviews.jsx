@@ -1,6 +1,6 @@
 import "../styles/customerReviews.scss";
 import people from "../assets/people.jpg";
-export default function CustomerReview() {
+export default function CustomerReviews() {
   return (
     <section className="Customer-wrapper container">
       <h1 className="text-center">
