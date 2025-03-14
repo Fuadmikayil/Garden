@@ -1,10 +1,11 @@
-import Header from "./Components/header";
+import Header from "./Components/Header";  
 import Hero from "./Components/Hero";
 import Products from "./Components/Products";
-import CustomerReviews from "./components/customerReview";
+import CustomerReviews from "./Components/CustomerReviews"; 
 import Provide from "./Components/Provide";
 import Footer from "./Components/Footer";
-import GreenCircle from "./components/GreenCircle";
+import GreenCircle from "./Components/GreenCircle"; 
+
 
 function App() {
   return (
